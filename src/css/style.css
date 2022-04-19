@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  font-family: Roboto;
+}
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid #d9dee2;
+}
+
+.navbar .container .navbar-nav li a {
+  color: #828690;
+  font-size: 17px;
+  font-weight: 500;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+}
+
+/* Home Page */
+.container-fluid {
+  background-color: #f7f7f7;
+}
+.home-container {
+  padding: 50px 0 50px 0;
+}
+
+.active {
+  color: #2597ec !important;
+}
+.cover-image {
+  margin: 10px;
+  min-width: 150px;
+  width: 100%;
+}
+
+.home-container .right-content {
+  padding: 35px 30px;
+}
+
+.right-content .book-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.right-content .book-about {
+  font-size: 23px;
+  font-weight: 500;
+  margin: 4px 0;
+}
+
+.right-content .book-author {
+  font-size: 18px;
+  font-weight: 500;
+  color: #8f95a3;
+  margin: 12px 0 30px 0;
+}
+
+.right-content .book-details {
+  border-top: 1px solid #d9dee2;
+  border-bottom: 1px solid #d9dee2;
+  display: flex;
+  width: fit-content;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.icon {
+  margin-right: 7px;
+}
+
+.right-content .book-details .read-time {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 15px 0 0;
+  min-width: 125px;
+}
+.right-content .book-details .listen-time {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 15px 0 15px;
+  min-width: 125px;
+}
+.right-content .book-details .add-library {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 15px 0 15px;
+  min-width: 125px;
+}
+.right-content .book-details .buy-book {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 30px 0 15px;
+  min-width: 125px;
+}
+
+.right-content .book-details .google-books-icon {
+  width: 15px;
+  margin: 0 5px 0 0;
+}
+.right-content .book-details ul li a {
+  font-weight: bold;
+  color: #828690;
+}
+svg {
+  margin-top: -4px;
+}
+.right-content .book-related-tags {
+  display: flex;
+  margin: 27px 0 0 0;
+  flex-wrap: wrap;
+}
+.right-content .book-related-tags .tag {
+  height: 28px;
+  color: white;
+  background-color: #8f95a3;
+  border-radius: 5px;
+  border: none;
+  padding: 3px 12px;
+  margin: 2px 5px;
+  font-size: 15px;
+}
+
+/* ==========Media Queries=========== */
+@media screen and (max-width: 1440px) {
+  .home-container .right-content {
+    padding: 7px 30px;
+  }
+  .right-content .book-author {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8f95a3;
+    margin: 7px 0 15px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home-container .right-content {
+    padding: 6px 5px 5px 40px;
+  }
+  .right-content .book-title {
+    font-size: 23px;
+  }
+  .right-content .book-about {
+    font-size: 16px;
+  }
+  .right-content .book-author {
+    font-size: 12px;
+  }
+  .right-content .book-details .read-time {
+    margin: 0 30px 0 0;
+  }
+  .right-content .book-details .buy-book {
+    margin: 0 30px 0 0px;
+  }
+  .right-content .book-details .listen-time {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 30px 0 0px;
+    min-width: 125px;
+  }
+  .right-content .book-details .add-library {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 30px 0 0px;
+    min-width: 125px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-container .main-row {
+    display: block;
+  }
+  .cover-picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .right-content .book-details .read-time {
+    margin: 0 20px 0 0px;
+    min-width: 110x;
+  }
+  .right-content .book-details .listen-time {
+    margin: 0 20px 0 0px;
+    min-width: 110px;
+  }
+  .right-content .book-details .add-library {
+    margin: 0 20px 0 0px;
+    min-width: 110px;
+  }
+  .right-content .book-details .buy-book {
+    margin: 0 20px 0 0px;
+    min-width: 110px;
+  }
+  .cover-image {
+    margin: 10px;
+    min-width: 150px;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .right-content .book-details {
+    border-top: 1px solid #d9dee2;
+    border-bottom: 1px solid #d9dee2;
+    display: flex;
+    width: fit-content;
+    padding: 5px 0;
+    flex-wrap: wrap;
+  }
+  .right-content .book-details .read-time {
+    margin: 0 20px 0 0;
+    min-width: 130px;
+  }
+  .right-content .book-details .listen-time {
+    margin: 0 20px 0 0;
+    min-width: 130px;
+  }
+  .right-content .book-details .add-library {
+    margin: 0 20px 0 0;
+    min-width: 130px;
+  }
+  .right-content .book-details .buy-book {
+    margin: 0 20px 0 0;
+    min-width: 130px;
+  }
+}
